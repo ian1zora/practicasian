@@ -1,3 +1,10 @@
+ *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: greenyellow;
+ }
+ 
  body{  
     background-color: firebrick;
      height: 50vh;  /*unidad VIEWPORT HEIGHT*/
