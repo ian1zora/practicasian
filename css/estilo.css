@@ -1,0 +1,17 @@
+ body{  
+     height: 50vh;  /*unidad VIEWPORT HEIGHT*/
+     width: 100vh;   /*unidad VIEWPORT WIDTH*/
+}
+
+.contenedor{
+        height: 100%;
+        width: 100%;
+
+        background-color: DDD0D6;
+}
+
+main{
+    height: 90%;
+    width: 60%;
+    background-color: white;
+}
