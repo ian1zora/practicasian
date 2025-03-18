@@ -19,7 +19,13 @@
 }
 
 main{
-    height: 90%;
+    height: 100%;
     width: 60%;
     background-color: white;
+}
+aside{
+    height: 100%;
+    width: 40%;
+    background-color: darkgoldenrod;
+    padding: 20px;
 }
