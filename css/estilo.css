@@ -6,7 +6,7 @@
  }
  
  body{  
-    background-color: firebrick;
+    /*background-color: firebrick;*/
      height: 100vh;  /*unidad VIEWPORT HEIGHT*/
      width: 100vw;   /*unidad VIEWPORT WIDTH*/
 }
