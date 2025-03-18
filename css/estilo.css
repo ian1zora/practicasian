@@ -8,7 +8,7 @@
  body{  
     background-color: firebrick;
      height: 100vh;  /*unidad VIEWPORT HEIGHT*/
-     width: 100vh;   /*unidad VIEWPORT WIDTH*/
+     width: 100vw;   /*unidad VIEWPORT WIDTH*/
 }
 
 .contenedor{
