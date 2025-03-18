@@ -7,7 +7,7 @@
  
  body{  
     background-color: firebrick;
-     height: 50vh;  /*unidad VIEWPORT HEIGHT*/
+     height: 100vh;  /*unidad VIEWPORT HEIGHT*/
      width: 100vh;   /*unidad VIEWPORT WIDTH*/
 }
 
