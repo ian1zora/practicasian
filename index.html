@@ -1,21 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
 
-    <link rel="stylesheet" href="css/estilo.css">
-    <title>TP0 -- CV </title>
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .projects,
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project,
+        .contact-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .project h3,
+        .contact-item h3 {
+            margin-top: 0;
+        }
+
+        .project a,
+        .contact-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body displayFlex>
-    <section class="contenedor">
-        <main> PARTE BLANCA</main>
-        <aside>
-            <section class"datosPersonales"></section>
-            <section class"socialMedia"></section> 
-            <section class"educacion"></section>  
-        </aside>
+
+<body>
+    <header>
+        <h1>Bienvenido a Mi Portafolio</h1>
+        <p>¡Soy [Tu Nombre], un desarrollador web!</p>
+    </header>
+
+    <section id="about">
+        <h2>Acerca de Mí</h2>
+        <p>Hola, soy ian, un weon que no debria tenr acceso a una computadora. Me encantan los videoujuegos y los aplicaciones web.</p>
     </section>
-    <!-- control + k + c -->
-</body>
-</html>
+
+    <!-- <section id="projects">
+        <h2>Proyectos Destacados</h2>
+        <div class="projects">
+            <div class="project">
+                <h3><a href="https://github.com/tuusuario/proyecto1" target="_blank">Proyecto 1</a></h3>
+                <p>Descripción breve del proyecto. Aquí puedes hablar de las tecnologías utilizadas y los desafíos que enfrentaste.</p>
+            </div>
+            <div class="project">
+                <h3><a href="https://github.com/tuusuario/proyecto2" target="_blank">Proyecto 2</a></h3>
+                <p>Otra descripción de tu segundo proyecto. Explica lo que aprendiste y cómo lo implementaste.</p>
+            </div>
+            <div class="project">
+                <h3><a href="https://github.com/tuusuario/proyecto3" target="_blank">Proyecto 3</a></h3>
+                <p>Descripción de tu tercer proyecto, con detalles sobre las funcionalidades principales.</p>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>HTML5 / CSS3</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Git / GitHub</li>
+            <li>MongoDB</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <div class="contact">
+            <div class="contact-item">
+                <h3>Email</h3>
+            </div>
+            <div class="contact-item">
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/tuusuario" target="_blank">Tu LinkedIn</a></p>
+            </div>
+            <div class="contact-item">
+                <h3>Twitter</h3>
+                <p><a href="https://twitter.com/tuusuario" target="_blank">Tu Twitter</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 [Tu Nombre]. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/tuusuario" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/tuusuario" target="_blank">Twitter</a>
+        </div>
+    </
