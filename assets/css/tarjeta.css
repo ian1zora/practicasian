@@ -1,1 +1,13 @@
 @import url('../../assets/css/gneral.css');
+
+body{
+    background-color: grey;
+    height: 100vh;
+    width: 100%;
+}
+
+.tarjeta{
+    width 350px;
+    height: 500px;
+    background-color: white;
+}
