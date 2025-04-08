@@ -19,7 +19,7 @@ body{
     height: 55%;
     background-color: violet;
 }
-.fotoperfil{
+#fotoperfil{
     height: 150px;
     width: 150px;
     background-color: white;
