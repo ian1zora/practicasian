@@ -1,33 +1,105 @@
-@import url('gneral.css');
-
-body{
-    background-color: grey;
+body {
+    background-color: #121212;
     height: 100vh;
-    width: 100%;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
 }
 
-.tarjeta{
-    width: 350px;
-    height: 500px;
-    background-color: white;
+.tarjeta {
+    width: 320px;
+    background-color: #f5f7fb;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
 }
 
-.cabecera{
-    width: 100%;
-    height: 55%;
-    background-color: violet;
-}
-#fotoperfil{
-    height: 150px;
-    width: 150px;
-    background-color: white;
+#fotoperfil {
+    width: 120px;
+    height: 120px;
+    background-color: #ccc;
     border-radius: 50%;
+    margin: 20px auto 10px;
+    background-image: url('https://via.placeholder.com/120');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid white;
 }
 
-.Datos{
+.datosPerfil h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.datosPerfil h3 {
+    margin: 5px 0;
+    color: #777;
+}
+
+.datosPerfil h2 {
+    margin-top: 5px;
+    color: #444;
+    font-size: 1rem;
+}
+
+#contenedorStats {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+
+.stat h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.stat h6 {
+    margin: 4px 0 0;
+    font-size: 0.75rem;
+    color: #777;
+}
+
+#acciones {
+    padding: 0 20px 20px;
+}
+
+.btnMensaje {
     width: 100%;
-    height: 45%;
-    background-color: lightblue;
+    padding: 10px;
+    background-color: #34c6be;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnMensaje:hover {
+    background-color: #29b3ac;
+}
+
+.boton-flotante {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 45px;
+    height: 45px;
+    background-color: #ff4e6a;
+    color: white;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
