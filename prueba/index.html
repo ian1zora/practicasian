@@ -32,11 +32,27 @@ align-items: center;
 .actions {
 display: flex;
 justify-content: space-between;
+gap: 0.5rem;
 }
 
-.actions a button {
-padding: 0.5rem 1rem;
-font-size: 1rem;
+.action-btn {
+flex: 1;
+background-color: black;
+color: white;
+border: none;
+border-radius: 12px;
+padding: 1rem 0.5rem;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: 0.9rem;
+}
+
+.action-btn img {
+width: 40px;
+height: auto;
+margin-bottom: 0.5rem;
 }
 
 .services {
@@ -46,22 +62,34 @@ gap: 1rem;
 justify-content: space-around;
 }
 
-.services img {
+.service-item {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 70px;
+text-align: center;
+font-size: 0.8rem;
+}
+
+.service-item img {
 width: 56px;
 height: 36px;
 object-fit: contain;
+margin-bottom: 0.3rem;
 }
 
 .promo {
 background-color: #FCB3C5;
 padding: 1rem;
 text-align: center;
+border-radius: 10px;
 }
 
 .promo img {
 width: 100%;
 max-width: 300px;
 height: auto;
+margin-bottom: 0.5rem;
 }
 
 .recent {
@@ -95,29 +123,64 @@ font-weight: bold;
 </div>
 
 <div class="actions">
-<button><img src="imagenes/top-up.jpg" alt="top-up"  width="40"/>Top Up</button>
-<a href="transfer.html"><button><img src="imagenes/send.png" alt="send"  width="40"/> Send</button></a>
-<button><img src="imagenes/withdraw.png" alt="withdraw"  width="40"/>Withdraw</button>
+<button class="action-btn">
+<img src="imagenes/top-up.jpg" alt="Top Up" />
+Top Up
+</button>
+
+<a href="transfer.html" style="flex: 1; text-decoration: none;">
+<button class="action-btn">
+<img src="imagenes/send.png" alt="Send" />
+Send
+</button>
+</a>
+
+<button class="action-btn">
+<img src="imagenes/withdraw.png" alt="Withdraw" />
+Withdraw
+</button>
 </div>
 
 <div class="services">
-
-<!-- -Íconos de servicios en 56x36  -->
-<div><img src="imagenes/red-mundial.png" alt="Internet" /> Internet</div>
-<div><img src="imagenes/gota-agua.png" alt="Agua" /></div>
-<div><img src="imagenes/electricidad.jpg" alt="Electricidad" /></div>
-<div><img src="imagenes/tele.png" alt="TV Cable" /></div>
-<div><img src="imagenes/auto.png" alt="Vehículo" /></div>
-<div><img src="imagenes/rent.png" alt="Renta" /></div>
-<div><img src="imagenes/invertir.jpg" alt="invertir" /></div>
-<div><img src="imagenes/more.jpg" alt="mas" /></div>
+<div class="service-item">
+<img src="imagenes/red-mundial.png" alt="Internet" />
+Internet
 </div>
-<div class="promo">
+<div class="service-item">
+<img src="imagenes/gota-agua.png" alt="Agua" />
+Agua
+</div>
+<div class="service-item">
+<img src="imagenes/electricidad.jpg" alt="Electricidad" />
+Electricidad
+</div>
+<div class="service-item">
+<img src="imagenes/tele.png" alt="TV Cable" />
+TV Cable
+</div>
+<div class="service-item">
+<img src="imagenes/auto.png" alt="Vehículo" />
+Vehículo
+</div>
+<div class="service-item">
+<img src="imagenes/rent.png" alt="Renta" />
+Renta
+</div>
+<div class="service-item">
+<img src="imagenes/invertir.jpg" alt="Invertir" />
+Invertir
+</div>
+<div class="service-item">
+<img src="imagenes/more.jpg" alt="Más" />
+Más
+</div>
+</div>
 
-<!-- -Imagen del banner promocional  -->
+<div class="promo">
 <img src="imagenes/compras.png" alt="Promoción verano" />
 <p><strong>50% OFF</strong><br />Summer special deal</p>
 </div>
+
 <div class="recent">
 <div>
 <strong>Raj K</strong>
@@ -127,6 +190,7 @@ font-weight: bold;
 </div>
 
 <div class="nav-link">
+<a href="transfer.html">Ir a comprobante de transferencia</a>
 </div>
 </div>
 </body>
