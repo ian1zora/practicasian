@@ -5,13 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Transferencia Exitosa</title>
 <style>
+* {
+box-sizing: border-box;
+}
+
 body {
 margin: 0;
 padding: 0;
 background-color: #fff;
 font-family: sans-serif;
 }
+
 .receipt-container {
+width: 100%;
 max-width: 400px;
 margin: auto;
 padding: 1.5rem;
@@ -25,13 +31,29 @@ gap: 1rem;
 align-self: flex-start;
 }
 
+.header img {
+width: 40px;
+}
+
 .success-img {
 width: 100%;
 text-align: center;
 }
 
 .success-img img {
-width: 200px;
+width: 100%;
+max-width: 200px;
+height: auto;
+}
+
+h2 {
+margin: 0.5rem 0 0;
+text-align: center;
+}
+
+p {
+text-align: center;
+margin: 0;
 }
 
 .amount {
@@ -46,6 +68,12 @@ gap: 1rem;
 border: 1px solid #ccc;
 padding: 0.5rem;
 border-radius: 8px;
+width: 100%;
+}
+
+.recipient img {
+width: 40px;
+height: auto;
 }
 
 .actions {
@@ -53,6 +81,7 @@ display: flex;
 flex-direction: column;
 gap: 0.5rem;
 margin-top: 1rem;
+width: 100%;
 }
 
 .actions button {
@@ -61,10 +90,16 @@ border: none;
 border-radius: 8px;
 background-color: black;
 color: white;
+font-size: 1rem;
+}
+
+.actions button:last-child {
+background-color: gray;
 }
 
 .nav-link {
 margin-top: 1rem;
+text-align: center;
 }
 
 .nav-link a {
@@ -77,29 +112,30 @@ text-decoration: none;
 <body>
 <div class="receipt-container">
 <div class="header">
-<a href="index.html"><img src="imagenes/restar.jpg" alt="Internet"  width="40" /> </a>
+<a href="index.html">
+<img src="imagenes/restar.jpg" alt="Volver" />
+</a>
 </div>
 
 <div class="success-img">
-
-<img src="imagenes/correr.png" alt="Internet" /> 
+<img src="imagenes/correr.png" alt="Transferencia exitosa" />
 </div>
+
 <h2>Transfer Success</h2>
 <p>Your money has been successfully sent to Nayantara V</p>
 <div class="amount">$132.00</div>
 
 <div class="recipient">
-
-<img src="imagenes/girl.png" alt="Internet"  width="40" /> 
+<img src="imagenes/girl.png" alt="Destinataria" />
 <div>
 <p><strong>Nayantara V</strong></p>
 <p>3:02 PM</p>
 </div>
 </div>
+
 <div class="actions">
 <button>Done</button>
-<button style="background-color: gray;">Transfer more money</button>
-</div>
+<button>Transfer more money</button>
 </div>
 </div>
 </body>
