@@ -5,12 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>EasyPay</title>
 <style>
-* { box-sizing: border-box; }
+* {
+box-sizing: border-box;
+}
 
 body {
 font-family: sans-serif;
 margin: 0;
-padding-bottom: 60px;
+padding-bottom: 60px; 
 background-color: #f8f8f8;
 }
 
@@ -66,10 +68,6 @@ height: auto;
 margin-bottom: 0.5rem;
 }
 
-.invert-icon {
-filter: invert(1);
-}
-
 .services {
 display: flex;
 flex-wrap: wrap;
@@ -116,7 +114,18 @@ padding-top: 1rem;
 flex-wrap: wrap;
 }
 
+.nav-link {
+margin-top: 1rem;
+text-align: center;
+}
 
+.nav-link a {
+text-decoration: none;
+color: #0066cc;
+font-weight: bold;
+}
+
+/* Footer fijo */
 footer {
 position: fixed;
 bottom: 0;
@@ -124,7 +133,7 @@ left: 50%;
 transform: translateX(-50%);
 width: 100%;
 max-width: 480px;
-background-color: #fff;
+background-color: #ffffff;
 box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 border-top: 1px solid #e0e0e0;
 }
@@ -139,9 +148,9 @@ padding: 0.5rem 0;
 display: flex;
 flex-direction: column;
 align-items: center;
-color: #444;
-font-size: 0.75rem;
 text-decoration: none;
+color: #e4d5d5;
+font-size: 0.75rem;
 }
 
 .footer-item img {
@@ -152,81 +161,116 @@ object-fit: contain;
 }
 
 .footer-item.active {
-color: #000;
+color: #e2e2e2;
+}
+
+.footer-item.active img {
+filter: brightness(0) saturate(100%) invert(0%);
 }
 
 @media (max-width: 360px) {
-.service-item { width: 28%; }
+.service-item {
+width: 28%;
+}
 }
 </style>
 </head>
-
 <body>
 <div class="container">
 <div class="balance-header">
 <h2>
-<img src="imagenes/logo.png" alt="Logo EasyPay" width="32" height="32">
+<img src="imagenes/logo.png" alt="EasyPay" width="32" height="32"  />
 EasyPay
 </h2>
 <div>
-<p style="margin:0;">Hi, Samantha</p>
+<p style="margin: 0;">Hi, Samantha</p>
 <strong>$4,590.00</strong>
 </div>
 </div>
 
 <div class="actions">
-<!
--Top Up con ícono invertido -->
 <button class="action-btn">
-<img src="imagenes/top-up.jpg" alt="Top Up" class="invert-icon">
+<img src="imagenes/top-up.jpg" alt="Top Up"     filter: invert(1);/>
 Top Up
 </button>
-<!
--Send con ícono invertido -->
-<a href="transfer.html" style="flex:1 1 30%; text-decoration:none;">
+
+<a href="transfer.html" width="40"     filter: invert(1); >
 <button class="action-btn">
-<img src="imagenes/send.png" alt="Send" class="invert-icon">
+<img src="imagenes/send.png" alt="Send"    filter: invert(1); />
 Send
 </button>
 </a>
 <button class="action-btn">
-<img src="imagenes/withdraw.png" alt="Withdraw">
+ <img src="imagenes/withdraw.png" alt="Withdraw" />
 Withdraw
-</button>
-</div>
+ </button>
+ </div>
 
-<!
--Resto de tu contenido (services, promo, recent...) -->
 <div class="services">
 <div class="service-item">
-<img src="imagenes/red-mundial.png" alt="Internet">
+<img src="imagenes/red-mundial.png" alt="Internet" />
 Internet
 </div>
-<!
--...otros ítems... -->
+<div class="service-item">
+<img src="imagenes/gota-agua.png" alt="Agua" />
+Agua
+</div>
+<div class="service-item">
+<img src="imagenes/electricidad.jpg" alt="Electricidad" />
+Electricidad
+</div>
+<div class="service-item">
+<img src="imagenes/tele.png" alt="TV Cable" />
+TV Cable
+</div>
+<div class="service-item">
+<img src="imagenes/auto.png" alt="Vehículo" />
+Vehículo
+</div>
+<div class="service-item">
+<img src="imagenes/rent.png" alt="Renta" />
+Renta
+</div>
+<div class="service-item">
+<img src="imagenes/invertir.jpg" alt="Invertir" />
+Invertir
+</div>
+<div class="service-item">
+<img src="imagenes/more.jpg" alt="Más" />
+Más
 </div>
 </div>
+
+<div class="promo">
+<img src="imagenes/compras.png" alt="Promoción verano" />
+<p style="margin: 0;"><strong>50% OFF</strong><br />Summer special deal</p>
+</div>
+
+<div class="recent">
+<div>
+<strong>Raj K</strong>
+<p style="margin: 0;">Feb 24, 2022</p>
+</div>
+<div>$240.00</div>
+</div>
+</div>
+
 <footer>
 <nav class="footer-nav">
 <a href="#" class="footer-item active">
-<img src="imagenes/home.png" alt="Inicio">
-Inicio
+<img src="imagenes/home.png" alt="Inicio" filter: invert(1);/>
 </a>
 <a href="#" class="footer-item">
-<img src="imagenes/recibo.png" alt="Recibos">
-Recibos
+<img src="imagenes/recivo.png" alt="Recibos" />
 </a>
 <a href="#" class="footer-item">
-<img src="imagenes/qr.png" alt="QR">
-QR
+<img src="imagenes/qr.jpg" alt="QR" />
 </a>
 <a href="#" class="footer-item">
-<img src="imagenes/bell.png" alt="Avisos">
-Avisos
+<img src="imagenes/bell.jpg" alt="Avisos" />
 </a>
 <a href="#" class="footer-item">
-<img src="imagenes/user.png" alt="Perfil">
-Perfil
+<img src="imagenes/user.jpg" alt="Perfil" />
 </a>
 </nav>
 </footer>
