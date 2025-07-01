@@ -5,14 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>EasyPay</title>
 <style>
-* {
-box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
 font-family: sans-serif;
 margin: 0;
-padding: 0;
+padding-bottom: 60px; /* espacio para el footer */
 background-color: #f8f8f8;
 }
 
@@ -28,200 +26,80 @@ background-color: #F8F8F8;
 min-height: 100vh;
 }
 
-.balance-header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
+/* ... tu CSS existente para header, actions, services, promo, recent ... */
 
-.actions {
-display: flex;
-justify-content: space-between;
-gap: 0.5rem;
-flex-wrap: wrap;
-}
-
-.action-btn {
-flex: 1 1 30%;
-background-color: black;
-color: white;
-border: none;
-border-radius: 12px;
-padding: 1rem 0.5rem;
-text-align: center;
-display: flex;
-flex-direction: column;
-align-items: center;
-font-size: 0.9rem;
-}
-
-.action-btn img {
-width: 40px;
-height: auto;
-margin-bottom: 0.5rem;
-}
-
-.services {
-display: flex;
-flex-wrap: wrap;
-gap: 1rem;
-justify-content: space-around;
-}
-
-.service-item {
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 22%;
-min-width: 70px;
-text-align: center;
-font-size: 0.8rem;
-}
-
-.service-item img {
-width: 56px;
-height: 36px;
-object-fit: contain;
-margin-bottom: 0.3rem;
-}
-
-.promo {
-background-color: #FCB3C5;
-padding: 1rem;
-text-align: center;
-border-radius: 10px;
-}
-
-.promo img {
+/* NUEVO ESTILO PARA EL FOOTER */
+footer {
+position: fixed;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
 width: 100%;
-height: auto;
-margin-bottom: 0.5rem;
+max-width: 480px;
+background-color: #ffffff;
+box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+border-top: 1px solid #e0e0e0;
 }
 
-.recent {
+.footer-nav {
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
+padding: 0.5rem 0;
+}
+
+.footer-item {
+display: flex;
+flex-direction: column;
 align-items: center;
-border-top: 1px solid #ccc;
-padding-top: 1rem;
-flex-wrap: wrap;
-}
-
-.nav-link {
-margin-top: 1rem;
-text-align: center;
-}
-
-.nav-link a {
 text-decoration: none;
-color: #0066cc;
-font-weight: bold;
+color: #444;
+font-size: 0.75rem;
 }
 
-@media (max-width: 360px) {
-.service-item {
-width: 28%;
+.footer-item img {
+width: 28px;
+height: 28px;
+margin-bottom: 0.2rem;
+object-fit: contain;
 }
+
+.footer-item.active {
+color: #000;
+}
+
+.footer-item.active img {
+filter: brightness(0) saturate(100%) invert(0%); /* icono destacado */
 }
 </style>
 </head>
 <body>
 <div class="container">
-<div class="balance-header">
-<h2><img src="imagenes/logo.png" alt="Vehículo" />EasyPay</h2>
-<div>
-<p>Hi, Samantha</p>
-<strong>$4,590.00</strong>
-</div>
-</div>
-
-<div class="actions">
-<button class="action-btn">
-<img src="imagenes/top-up.jpg" alt="Top Up" />
-Top Up
-</button>
-
-<a href="transfer.html">
-<button class="action-btn">
-<img src="imagenes/send.png" width="40" alt="Send" />
-Send
-</button>
-</a>
-
-<button class="action-btn">
-<img src="imagenes/withdraw.png" alt="Withdraw" />
-Withdraw
-</button>
-</div>
-
-<div class="services">
-<div class="service-item">
-<img src="imagenes/red-mundial.png" alt="Internet" />
-Internet
-</div>
-<div class="service-item">
-<img src="imagenes/gota-agua.png" alt="Agua" />
-Agua
-</div>
-<div class="service-item">
-<img src="imagenes/electricidad.jpg" alt="Electricidad" />
-Electricidad
-</div>
-<div class="service-item">
-<img src="imagenes/tele.png" alt="TV Cable" />
-TV Cable
-</div>
-<div class="service-item">
-<img src="imagenes/auto.png" alt="Vehículo" />
-Vehículo
-</div>
-<div class="service-item">
-<img src="imagenes/rent.png" alt="Renta" />
-Renta
-</div>
-<div class="service-item">
-<img src="imagenes/invertir.jpg" alt="Invertir" />
-Invertir
-</div>
-<div class="service-item">
-<img src="imagenes/more.jpg" alt="Más" />
-Más
-</div>
-</div>
-
-<div class="promo">
-<img src="imagenes/compras.png" alt="Promoción verano" />
-<p><strong>50% OFF</strong><br />Summer special deal</p>
-</div>
-
-<div class="recent">
-<div>
-<strong>Raj K</strong>
-<p>Feb 24, 2022</p>
-</div>
-<div>$240.00</div>
-</div>
+<!
+-... tu contenido existente ... -->
 </div>
 <footer>
-        <div class="services">
-                <div class="service-item">
-                <img src="imagenes/home.png" alt="Internet" />
-                </div>
-                <div class="service-item">
-                <img src="imagenes/recivo.png" alt="Agua" />
-                </div>
-                <div class="service-item">
-                <img src="imagenes/qr.jpg" alt="Electricidad" />
-                </div>
-                <div class="service-item">
-                <img src="imagenes/bell.jpg" alt="TV Cable" />
-                </div>
-                <div class="service-item">
-                <img src="imagenes/user.jpg" alt="Vehículo" />
-                </div>
-                </div>
-                </div>
-
+<nav class="footer-nav">
+<a href="#" class="footer-item active">
+<img src="imagenes/home.png" alt="Inicio" />
+Inicio
+</a>
+<a href="#" class="footer-item">
+<img src="imagenes/recibo.png" alt="Recibos" />
+Recibos
+</a>
+<a href="#" class="footer-item">
+<img src="imagenes/qr.png" alt="QR" />
+QR
+</a>
+<a href="#" class="footer-item">
+<img src="imagenes/bell.png" alt="Notificaciones" />
+Avisos
+</a>
+<a href="#" class="footer-item">
+<img src="imagenes/user.png" alt="Perfil" />
+Perfil
+</a>
+</nav>
 </footer>
 </body>
 </html>
